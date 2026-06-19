@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Changa+One:ital@0;1&family=Lilita+One&display=swap'); /*titulo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Changa+One:ital@0;1&family=Lilita+One&display=swap'); /*paragrafo*/
+
+/*--------------------------------------------------------------------------*/
+/*paleta de cores:
+ vermelho - 254, 0, 0
+ branco - 255, 255, 255 
+ preto -  0, 0, 0
+ */
+/*--------------------------------------------------------------------------*/
+
+/*reset basico*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/*configurando o header*/
+header{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(254, 0, 0);
+    padding: 25px;
+}
+
+/*configurando o titulo do header*/
+header h1{
+    color: rgb(255, 255, 255 );
+    font-size: 50px;
+    font-family: "Arvo", serif; /*usado para trazer a fonte que importei*/
+    font-weight: 400; /*expressura da minnha fonte*/
+    font-style: normal;  /*etilo da fonte*/
+}
+
+/*configuurando o nav*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10vh;
+    padding-top: 12px;
+}
+
+/*configuradno os links do nav*/
+nav a{
+    color: rgb(255, 255, 255 );
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*alteração de cor do nav*/
+nav a:hover{
+    color: black;
+}
+
+#apresentação{
+    background-color: rgb(255, 255, 255 );
+}
+
+/*mexendo no article do pai sectiom "apresentação"*/
+#apresentação article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15vh;
+    gap: 1pc;
+}
+
+/*mexendo na imagem*/
+#apresentação img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/*mexendo no parágrafo*/
+#apresentação p{
+    font-size: 25px;
+    text-align: center;
+    text-align: justify;
+    font-family: "Acme", sans-serif; /*fonte*/
+    font-weight: 400; /*expessura*/
+    font-style: normal; /*estilo*/
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*container pai*/
+#sobre{
+    background-color: black;
+    padding: 20vh 25vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*titulo do sobre*/
+#sobre h2{
+    color: rgb(255, 255, 255 );
+    text-align: center;
+    font-family: "Arvo", serif; /*usado para trazer a fonte que importei*/
+    font-weight: 400; /*expressura da minnha fonte*/
+    font-style: normal;  /*etilo da fonte*/
+    padding: 10px 10px 8vh 10px; /* cima, direita, baixo, esquerda */
+    font-size: 2.5rem;
+}
+
+/*mexendo no article*/
+#sobre article{
+    display: flex;
+    align-items: center;
+}
+
+/*paragrafo sobre*/
+#sobre p{
+    font-size: 30px;
+    text-align: center;
+    text-align: justify;
+    color: rgb(255, 255, 255 );
+    padding-top: 20px;
+
+}
+
+#skils{
+    text-align: center;
+    padding: 8vh 10vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* era flex-start */
+    gap: 4rem; /* era 15vh */
+}
+
+#skils h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+     font-family: "Arvo", serif; /*usado para trazer a fonte que importei*/
+    font-weight: 400; /*expressura da minnha fonte*/
+    font-style: normal;  /*etilo da fonte*/
+}
+
+#apps{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#apps img{
+    height: 140px;
+    width: 140px;
+    object-fit: contain;
+}
+/*-------------------------------------------------*/
+
+#projetos{
+    text-align: center;
+    padding: 4rem 2rem; 
+    background-color: rgb(254, 0, 0);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projetos h2{
+    color: rgb(255, 255, 255 );
+    font-size: 3rem;
+    margin-bottom: 8vh;
+    font-family: "Arvo", serif; /*usado para trazer a fonte que importei*/
+    font-weight: 400; /*expressura da minnha fonte*/
+    font-style: normal;  /*etilo da fonte*/
+    
+}
+
+#subproject{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 320px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.works:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba( 0, 0, 0, 0.5);
+}
+
+.works img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.works h3{
+    font-family: "Acme", sans-serif; /*fonte*/
+    font-weight: 400; /*expessura*/
+    font-style: normal;     
+    font-size: 35px;
+    padding-bottom: 2px;
+    color: rgb(255, 255, 255 );
+}
+
+.works p{
+    color: rgb(254, 0, 0);
+    font-family: "Acme", sans-serif; /*fonte*/
+    font-weight: 400; /*expessura*/
+    font-style: normal;     
+    font-size: 25px;
+    padding-top: 0px;
+     margin-top: auto;
+}
+
+/*------------------------------------------------------------------*/
+
+footer img{
+    width: clamp(60px, 15vw, 200px); /* cresce proporcional à tela, máximo 200px */
+    height: clamp(60px, 15vw, 200px);
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+footer img:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba( 0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: center;
+    padding: 4rem 2rem; 
+    background-color: rgb(0, 0, 0);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer h2{
+    color: rgb(255, 255, 255 );
+    font-size: 3rem;
+    margin-bottom: 8vh;
+    font-family: "Arvo", serif; /*usado para trazer a fonte que importei*/
+    font-weight: 400; /*expressura da minnha fonte*/
+    font-style: normal;  /*etilo da fonte*/
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12rem;
+}
+
+/*-------------------------------------------------------------------*/
+
+@media (max-width: 760px) {
+    nav {
+        gap: 3vw;
+    };
+
+    header h1 {
+        font-size: 8vw;
+    }
+
+    #apresentação article{
+        padding: 5vh 5vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #apresentação p{
+        font-size: 18px;
+    }
+
+    #sobre {
+        padding: 5vh 5vw;
+    } 
+
+    #sobre p {
+        font-size: 10px;
+        text-align: left;
+    }
+}
