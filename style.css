@@ -345,3 +345,37 @@ footer h2{
         gap: 3rem;
     }
 }
+
+@media (max-width: 480px) {
+    nav{
+        gap: 2vw;
+        font-size: 18px;
+    }
+
+    nav a{
+        font-size: 18px;
+    }
+
+    #sobre{
+        padding: 4vh 4vw;
+        min-height: unset;
+    }
+
+    #sobre p{
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    #skils {
+        min-height: unset;
+        padding: 4vh 4vw;
+    }
+
+    #projetos {
+        min-height: unset;
+    }
+
+    footer {
+        min-height: unset;
+    }
+}
