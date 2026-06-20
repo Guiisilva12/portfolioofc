@@ -334,6 +334,15 @@ footer h2{
 
     .works {
         width: calc(40% - 15px);
+        height: auto;
+    }
+
+    .works h3{
+        font-size: 20px;
+    }
+
+    .works p{
+        font-size: 16px;
     }
 
     footer{
