@@ -285,7 +285,7 @@ footer h2{
 @media (max-width: 760px) {
     nav {
         gap: 3vw;
-    };
+    }
 
     header h1 {
         font-size: 8vw;
@@ -301,12 +301,47 @@ footer h2{
         font-size: 18px;
     }
 
+    #apresentação img{
+        width: 200px;
+        height: 200px;
+    }
+
     #sobre {
         padding: 5vh 5vw;
+        min-height: unset;
+        justify-content: flex-start;
     } 
 
     #sobre p {
-        font-size: 10px;
+        font-size: 18px;
         text-align: left;
+    }
+
+    #skils {
+        padding: 5vh 5vw;;
+        min-height: unset;
+    }
+
+    #skils h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #apps img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .works {
+        width: calc(40% - 15px);
+    }
+
+    footer{
+        min-height: unset;
+        padding: 5vh 5vw;
+    }
+
+    #cont{
+        gap: 3rem;
     }
 }
