@@ -349,11 +349,29 @@ footer h2{
 @media (max-width: 480px) {
     nav{
         gap: 2vw;
-        font-size: 18px;
     }
 
     nav a{
         font-size: 18px;
+    }
+
+    header h1{
+        font-size: 7vw;
+    }
+
+    #apresentação article{
+        padding: 4vh 4vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #apresentação p{
+        font-size: 16px;
+    }
+    
+    #apresentação img{
+        height: 180px;
+        width: 180px;
     }
 
     #sobre{
@@ -371,11 +389,29 @@ footer h2{
         padding: 4vh 4vw;
     }
 
+    #skils h2{
+        font-size: 2rem;
+    }
+
+    #apps img{
+        height: 80px;
+        width: 80px;
+    }
+
     #projetos {
         min-height: unset;
     }
 
+    .works{
+        width: calc(40% - 15px);
+    }
+
     footer {
         min-height: unset;
+        padding: 4vh 4vw;
+    }
+
+    #cont {
+        gap: 2rem;
     }
 }
