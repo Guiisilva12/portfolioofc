@@ -354,3 +354,35 @@ footer h2{
         gap: 3rem;
     }
 }
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    #apps img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .works {
+        width: calc(40% - 15px);
+        height: auto;
+    }
+
+    .works h3 {
+        font-size: 18px;
+    }
+
+    .works p {
+        font-size: 14px;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    #cont {
+        gap: 1.5rem;
+    }
+}
